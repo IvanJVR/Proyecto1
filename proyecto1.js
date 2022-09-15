@@ -13,6 +13,15 @@ function insertarImagen(data){
     console.log(data);
 
     var multimedia = document.getElementById("imagenNASA");
-    multimedia.innerHTML = (`<img src="${data.hdurl}" width="50%" heigh="auto">`);
+    var tituloImagen = document.getElementById("tituloImagen");
+    var autor = document.getElementById("autor");
+    var fecha = document.getElementById("fecha");
+    var descrip = document.getElementById("descripcion");
+
+    multimedia.innerHTML = (`<img src="${data.hdurl}" width="100%" heigh="auto">`);
+    tituloImagen.textContent = data.title;
+    autor.textContent = data.copyright;
+    fecha.textContent = data.date;
+    descrip.textContent = data.explanation;
 }
 
