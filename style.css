@@ -3,7 +3,11 @@ html{
             linear-gradient(127deg, rgba(61, 0, 48, 0.8), rgba(0, 0, 0, 0.5)),
             linear-gradient(336deg, rgba(6, 84, 0, 0.8), rgba(0, 0, 0, 0.5) );
     width: 100%;
-    height: 100%;
+    height: 132%;
+}
+
+body{
+ margin: 0;
 }
 
 h1{
@@ -18,15 +22,15 @@ h1{
 .Container{
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
     justify-content: center;
 }
 
 .Multimedia > #imagenNASA{
     display: flex;
     flex-direction: column;
-    background-color: white;
     align-items: center;
+    width: fit-content;
+    padding-left: 2%;
 }
 
 .Info{
@@ -45,6 +49,8 @@ h1{
     text-align: center;
     margin-top: 0;
     margin-bottom: 3%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
 }
 
 .infoInLine{
@@ -55,7 +61,8 @@ h1{
     width: 100%;
     text-align: justify;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: lighter;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .infoInLine > #autor{
@@ -73,7 +80,101 @@ h1{
     font-size: 20px;
 }
 
+form{
+    border-radius: 15px;
+    background-color: rgba(192, 192, 192, 0.35);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+    height: 245px;
+    margin-top: 2%;
+    padding: 10px;
+}
 
+form h3{
+    font-size: 30px;
+    padding-bottom: 1%;
+    color: white;
+    margin: auto 0;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.ContainerTextContact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: inherit;
+    align-content: center;
+    width: 100%;
+} 
+
+.InfoContact{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+    width: 48.5%;
+    padding-right: 1%;
+    padding: 5px 2px 5px 0;
+}
+
+.InfoContact > #contactName{
+    height: 29%;
+    margin-bottom: 5px;
+    padding-left: 2%;
+}
+
+.InfoContact > #contactSubject{
+    height: 29%;
+    padding-left: 2%;
+}
+
+.InfoContact > #contactEmail{
+    height: 29%;
+    margin-bottom: 5px;
+    padding-left: 2%;
+}
+
+.InfoContact input{
+    border-radius: 10px;
+    border: 0;
+}
+
+#message{
+    width: 44.9%;
+    height: 83%;
+    border-radius: 15px;
+    border: 0;
+    text-align: start;
+    padding: 2%;
+    margin-left: 2%;
+}
+
+#bottonSubmit{
+    border-radius: 30px;
+    margin-top: 10px;
+    height: 25%;
+    border: 0;
+    font-size: 25px;
+    color: white;
+    background-color: rgb(241, 105, 105);
+}
+
+footer{
+    width: 100%;
+    height: 35%;
+    background-color: black;
+    padding: 2%;
+    margin-top: 1%;
+}
+
+footer p{
+    color: white;
+    margin: 0;
+}
 
 
 

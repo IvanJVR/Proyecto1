@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <title>Imagen Astronomica</title>
 </head>
+
 <body>
     <script src="proyecto1.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -10,8 +12,8 @@
 
     <div class="Container">
         <div class="Multimedia">
-            <div id="imagenNASA" class="card">
-                
+            <div id="imagenNASA">
+
             </div>
         </div>
         <div class="Info">
@@ -22,11 +24,28 @@
             </div>
             <p id="descripcion">
             </p>
-        </div>    
+        </div>
     </div>
-
+    <center>
+        <form class="Contact">
+            <h3>Contáctame</h3>
+            <div class="ContainerTextContact">
+                <div class="InfoContact">
+                    <input type="text" id="contactName" placeholder="Nombre"></input>
+                    <input type="text" id="contactEmail" placeholder="Correo"></input>
+                    <input type="text" id="contactSubject" placeholder="Asunto"></input>
+                </div>
+                <textarea type="text" id="message" placeholder="Mensaje"></textarea>
+            </div>
+            <input type="submit" value="Submit" id="bottonSubmit">
+        </form>
+    </center>
 </body>
 <footer>
-
+    <p>Iván Jesús Vázquez Rivera A01329911</p> 
+    <p>
+        Este proyecto utiliza el API APOD de la NASA que muestra una imagen astrónomica diferente cada día. Proporciona datos como: título, autor, fecha y descripción.
+        Incluye un forma de contacto.
+    </p>
 </footer>
 </html>
