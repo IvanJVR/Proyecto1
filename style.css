@@ -80,7 +80,14 @@ h1{
     font-size: 20px;
 }
 
-form{
+.selectDate{
+    display: grid;
+    grid-template-columns: repeat(4, 5%);
+    margin-top: 1%;
+    justify-content: center;
+}
+
+.Contact{
     border-radius: 15px;
     background-color: rgba(192, 192, 192, 0.35);
     display: flex;
